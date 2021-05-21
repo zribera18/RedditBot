@@ -28,7 +28,7 @@ def main():
     # pprint.pprint(temp)
     # print(temp)
 
-    r = praw.Reddit(user_agent='news_reader; u/360flip1995 version 0.0.1')
+    r = praw.Reddit(user_agent='news_reader; u/<REDACTED> version 0.0.1')
     submissionsNews = list(r.get_subreddit('news').get_hot(limit=10))
     submissionsUplifting = list(r.get_subreddit('upliftingnews').get_top_from_day(limit = 10))
     submission_form = "{}) {} <{}>"
@@ -125,7 +125,7 @@ main()
 #               "github.com/Damgaard/Reddit-Bots/")
 # r = praw.Reddit(user_agent=user_agent)
 # thing_limit = 10
-# user_name = "360flip1995"
+# user_name = "<REDACTED>"
 # user = r.get_redditor(user_name)
 # gen = user.get_comments(limit=thing_limit)
 # karma_by_subreddit = {}
